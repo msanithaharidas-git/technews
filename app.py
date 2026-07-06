@@ -63,7 +63,9 @@ if st.button("Generate PDF"):
         with open(pdf_file,"rb") as pdf:
 
             st.success("PDF Generated Successfully.")
-            pdf_path="https://drive.google.com/drive/folders/1IJsogdCX9KiuBB953Kp9kBRhfLIYP3vj?usp=sharing"
+            #pdf_path="https://drive.google.com/drive/folders/1IJsogdCX9KiuBB953Kp9kBRhfLIYP3vj?usp=sharing"
+            pdf_path="1IJsogdCX9KiuBB953Kp9kBRhfLIYP3vj"
+
             upload_to_drive(pdf_path)
             st.download_button(
                 "Download PDF",
