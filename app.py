@@ -6,7 +6,7 @@ from drive_upload import upload_to_drive
 
 import os
 
-os.makedirs("uploaded_images", exist_ok=True)
+os.makedirs("images", exist_ok=True)
 os.makedirs("generated", exist_ok=True)
 
 st.set_page_config(page_title="Technical News PDF Generator",
@@ -40,6 +40,11 @@ if st.button("Generate PDF"):
         image_path = None
 
         if image is not None:
+
+            image_path = os.path.join("images", image.name)
+
+            with open(image_path, "wb") as f:
+                  f.write(image.getbuffer())
 
             image_path = os.path.join("generated", image.name)
 
