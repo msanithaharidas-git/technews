@@ -4,6 +4,11 @@ from pdf_generator import create_pdf
 import os
 from drive_upload import upload_to_drive
 
+import os
+
+os.makedirs("uploaded_images", exist_ok=True)
+os.makedirs("generated", exist_ok=True)
+
 st.set_page_config(page_title="Technical News PDF Generator",
                    layout="centered")
 
