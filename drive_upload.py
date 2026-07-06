@@ -11,7 +11,7 @@ from googleapiclient.http import MediaIoBaseUpload
 # https://drive.google.com/drive/folders/1AbCdEfGhIjKlMnOp
 # Folder ID = 1AbCdEfGhIjKlMnOp
 # =====================================================
-FOLDER_ID = "YOUR_GOOGLE_DRIVE_FOLDER_ID"
+FOLDER_ID = "1IJsogdCX9KiuBB953Kp9kBRhfLIYP3vj"
 
 
 def upload_to_drive(file_path, file_name=None):
